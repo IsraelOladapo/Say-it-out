@@ -1,0 +1,35 @@
+<%-include("partials/header.ejs")%>
+<section class="post_container">
+  <div class="container-fluid">
+      <div class="container mt-5">
+          <h1 class="register">Register</h1>
+          <div class="row mt-3">
+              <div class="col-sm-8">
+              <div class="card">
+                  <div class="card-body mt-3">
+                  <!-- Makes POST request to /register route -->
+                  <form action="/register" method="POST" enctype="multipart/form-data">
+                      <div class="form-group">
+                          <label for="username">Username</label>
+                          <input type="username" class="form-control" name="username" required>
+                      </div>
+                      <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" name="email" required>
+                      </div>
+                      <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" name="password" required>
+                      </div>
+                      <label for="photo">Upload your picture</label>
+                      <input type="file" class="form-control" name="photo" accept="image/*" required>
+                      <button type="submit" class="btn btn-dark mt-3">Register</button>
+                  </form>
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>        
+  </div>
+</section>
+<%-include("partials/footer.ejs")%>

@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgb(51, 55, 44);
+  height: 110vh;
+  position: relative;
+}
+
+header {
+  border-bottom: 2px solid #ffe5cf;
+}
+
+/***** HEADER NAVBAR CUSTOM STYLES *****/
+#navbar_button {
+  border-color: #ffe5cf;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #fff;
+  width: 5rem;
+}
+#navbar_button:hover {
+  background-color: #ffe5cf;
+  color: #557c56;
+  transition: 0.7s;
+}
+#navbar-brand_color {
+  color: #ff885b;
+}
+
+/* Blogs Page */
+#post-card {
+  border-top: 1px solid #ffffff7e;
+  /* border-bottom: 1px solid #ffffff7e; */
+  color: #fff;
+  margin-top: 5%;
+  padding: 1rem;
+}
+#profile-picture {
+  border-radius: 50%;
+  width: 50px;
+  float: left;
+  margin-right: 10px;
+}
+.card-header {
+  margin-left: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.card-header #profile-name {
+  font-weight: bold;
+}
+
+.card-header #profile-id {
+  font-weight: 100;
+}
+
+.card-body {
+  padding-left: 4rem;
+}
+
+/* Home Page */
+#home_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #ffe5cf;
+}
+#register-btn {
+  background-color: #557c56;
+  color: #fff;
+  margin: 1rem;
+  width: 8rem;
+}
+#register-btn:hover {
+  background-color: #688569;
+  transform: scale(1.05);
+}
+#login-btn {
+  background-color: #ff885b;
+  color: #ffe5cf;
+  margin: 1rem;
+  width: 8rem;
+}
+#login-btn:hover {
+  background-color: #faa282;
+  transform: scale(1.05);
+}
+
+/***** POST PAGE STYLES *****/
+
+.post_container {
+  margin-top: 5rem;
+}
+.post-form_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.post_container h2 {
+  color: #fff;
+}
+
+.post-form_container textarea {
+  border-radius: 5px;
+  border: 2px solid #557c56;
+  width: 80%;
+  height: 300px;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px;
+}
+
+.post-form_container input {
+  border-radius: 5px;
+  width: fit-content;
+  background-color: #ffe5cf;
+  font-weight: 300;
+  color: #557c56;
+}
+
+.post-form_container button {
+  font-weight: bold;
+  width: 80px;
+  height: 40px;
+  padding: 2px;
+  border: none;
+  margin-left: 70%;
+  border-radius: 5px;
+  background-color: #557c56;
+  color: #fff;
+}
+
+.post-form_container button:hover {
+  background-color: #ff885b;
+  color: #ffe5cf;
+  transition: 0.8s;
+}
+
+/* Side sticky toggle to post.html */
+
+.side-toggle__container {
+  width: 4rem;
+  position: fixed;
+  scroll-behavior: smooth;
+  top: 80%;
+  right: 0;
+}
+
+.toggle-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #557c56;
+  border-radius: 25px;
+  color: white;
+  font-size: larger;
+  font-weight: 900;
+}
+
+.toggle-btn:hover {
+  color: #fff;
+  background-color: #ff885b;
+  transition: 0.8s;
+}
+
+/* Login Page */
+.login,
+.register {
+  color: #ff885b;
+}
+
+footer {
+  margin-top: 1rem;
+  background-color: #242c24;
+  color: #fff;
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+}

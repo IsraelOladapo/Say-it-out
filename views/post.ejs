@@ -1,0 +1,16 @@
+<%-include("partials/header.ejs")%>
+
+
+<section class="post_container">
+  <div class="container-fluid">
+    <h2>Post</h2>
+    <form class="post-form_container" action="/submit" method="POST" enctype="multipart/form-data">
+      <textarea name="content" id="" placeholder="What's on your mind?" required></textarea>
+      <input type="file" name="file" accept="image/*" multiple capture>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+
+<%-include("partials/footer.ejs")%>

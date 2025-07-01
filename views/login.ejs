@@ -1,0 +1,30 @@
+<%-include("partials/header.ejs")%>
+<section class="post_container">
+  <div class="container-fluid">
+      <div class="container mt-5">
+          <h1 class="login">Login</h1>
+          <div class="row mt-3">
+            <div class="col-sm-8">
+              <div class="card">
+                <div class="card-body mt-3 my-3">
+                  <!-- Makes POST request to /login route -->
+                  <form action="/login" method="POST">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" name="username">
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" name="password">
+                    </div>
+                    <button type="submit" class="btn btn-dark mt-3">Login</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>        
+  </div>
+</section>
+<%-include("partials/footer.ejs")%>
